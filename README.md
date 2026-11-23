@@ -17,7 +17,7 @@ Meine Claude-Code-Einrichtung zum Mitnehmen auf andere Rechner:
    ```bash
    brew install gh
    gh auth login
-   gh repo clone <dein-github-name>/claude-setup ~/claude-setup
+   gh repo clone ben447kreut/claude-setup ~/claude-setup
    ```
 3. Einrichten:
    ```bash
