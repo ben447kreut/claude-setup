@@ -3,6 +3,7 @@
 Meine Claude-Code-Einrichtung zum Mitnehmen auf andere Rechner:
 
 - **`plugins/superpowers/`**: [Superpowers](https://github.com/obra/superpowers) 7.0.2 (MIT-Lizenz, Jesse Vincent): Skills für Brainstorming, Planung, TDD, systematisches Debugging, Code-Review usw.
+- **`plugins/marketing/`**: rund 50 Marketing-Skills (Copywriting, SEO, Ads, CRO, E-Mail, Pricing, Social …), aufrufbar als `marketing:<skill>`
 - **`CLAUDE.md`**: globale Startregeln (Superpowers-Skills bei passenden Aufgaben benutzen)
 - **`.claude-plugin/marketplace.json`**: macht dieses Repository zu einem Claude-Code-Plugin-Marketplace
 - **`install.sh`**: richtet alles auf dem Mac ein
@@ -33,6 +34,10 @@ cd ~/claude-setup
 git pull
 bash install.sh
 ```
+
+## Marketing-Skills ändern oder ergänzen
+
+Skills in `plugins/marketing/skills/<name>/SKILL.md` bearbeiten oder neu anlegen, die Version in `plugins/marketing/.claude-plugin/plugin.json` und `.claude-plugin/marketplace.json` erhöhen, committen und pushen. Auf dem anderen Rechner dann `git pull` und `bash install.sh`.
 
 ## Superpowers auf eine neue Version bringen
 

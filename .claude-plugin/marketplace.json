@@ -1,6 +1,6 @@
 {
   "name": "claude-setup",
-  "description": "Persönliche Claude-Code-Einrichtung: Superpowers-Skills und Startregeln",
+  "description": "Persönliche Claude-Code-Einrichtung: Superpowers-Skills, Marketing-Skills und Startregeln",
   "owner": {
     "name": "claude-setup"
   },
@@ -10,6 +10,12 @@
       "description": "Core skills library for Claude Code: TDD, debugging, collaboration patterns, and proven techniques",
       "version": "7.0.2",
       "source": "./plugins/superpowers"
+    },
+    {
+      "name": "marketing",
+      "description": "Marketing-Skills: Copywriting, SEO, Ads, CRO, E-Mail, Pricing, Social und mehr",
+      "version": "1.0.0",
+      "source": "./plugins/marketing"
     }
   ]
 }

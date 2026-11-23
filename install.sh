@@ -2,7 +2,7 @@
 # Richtet diese Claude-Code-Einrichtung auf macOS (oder Linux) ein:
 #   1. CLAUDE.md (Startregeln) nach ~/.claude/CLAUDE.md
 #   2. Dieses Repository als Plugin-Marketplace "claude-setup"
-#   3. Plugin "superpowers" installieren
+#   3. Plugins "superpowers" und "marketing" installieren
 # Aufruf: aus dem geklonten Repository heraus  ->  bash install.sh
 set -euo pipefail
 
@@ -33,8 +33,11 @@ else
   claude plugin marketplace add "$REPO_DIR"
 fi
 
-# 3. Plugin
-claude plugin install superpowers@claude-setup
+# 3. Plugins (install aktualisiert bereits installierte Plugins nicht -> danach update)
+for plugin in superpowers marketing; do
+  claude plugin install "$plugin@claude-setup"
+  claude plugin update "$plugin@claude-setup" >/dev/null 2>&1 || true
+done
 
 echo
 echo "Fertig. Starte Claude Code neu (neue Sitzung), damit die Superpowers-Skills geladen werden."
