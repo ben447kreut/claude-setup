@@ -1,0 +1,15 @@
+{
+  "name": "claude-setup",
+  "description": "Persönliche Claude-Code-Einrichtung: Superpowers-Skills und Startregeln",
+  "owner": {
+    "name": "claude-setup"
+  },
+  "plugins": [
+    {
+      "name": "superpowers",
+      "description": "Core skills library for Claude Code: TDD, debugging, collaboration patterns, and proven techniques",
+      "version": "7.0.2",
+      "source": "./plugins/superpowers"
+    }
+  ]
+}

@@ -1,0 +1,3 @@
+# Skripte müssen auf macOS/Linux LF-Zeilenenden haben
+* text=auto eol=lf
+*.png binary
